@@ -1,0 +1,35 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: biblioteca
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  api:
+    # Usa a imagem publicada no Docker Hub.
+    # Sobrescreva via env var: DOCKER_IMAGE=usuario/biblioteca-api:latest docker compose up
+    image: ${DOCKER_IMAGE:-biblioteca-api:latest}
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      DATABASE_URL: "host=db port=5432 user=postgres password=postgres dbname=biblioteca sslmode=disable"
+      PORT: "8080"
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  postgres_data:

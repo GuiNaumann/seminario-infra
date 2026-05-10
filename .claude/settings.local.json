@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python --version; python -c \"import pdfplumber; print\\('ok'\\)\" 2>&1)",
+      "PowerShell(py *)",
+      "PowerShell(New-Item *)",
+      "PowerShell(& \"C:\\\\Program Files\\\\Git\\\\mingw64\\\\bin\\\\pdftotext.exe\" -layout \"C:\\\\dev\\\\seminario-infra\\\\CI_CD.pdf\" \"C:\\\\dev\\\\seminario-infra\\\\trabalho.txt\")",
+      "PowerShell(Test-Path *)"
+    ]
+  }
+}

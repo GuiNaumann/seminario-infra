@@ -1,0 +1,33 @@
+# Binários
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+/server
+/biblioteca-api
+
+# Testes
+*.test
+*.out
+coverage.out
+
+# Vendor
+vendor/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Variáveis de ambiente
+.env
+.env.local
+
+# Arquivos auxiliares
+trabalho.txt
+*.pdf
