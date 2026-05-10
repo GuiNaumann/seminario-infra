@@ -15,8 +15,7 @@ CRUD de livros em **Go + PostgreSQL** com pipeline completo de CI/CD em **GitHub
 ---
 
 ## 🐳 Imagem no Docker Hub
-<!-- Substitua "GuiNaumann" pelo seu usuário real do Docker Hub -->
-**`GuiNaumann/biblioteca-api:latest`** → https://hub.docker.com/r/GuiNaumann/biblioteca-api
+**`gnaumann/biblioteca-api:latest`** → https://hub.docker.com/r/gnaumann/biblioteca-api
 
 ---
 
@@ -66,7 +65,7 @@ A API sobe em `http://localhost:8080` e o Postgres em `localhost:5432`.
 
 ### 2) Com a imagem oficial do Docker Hub
 ```bash
-DOCKER_IMAGE=GuiNaumann/biblioteca-api:latest docker compose up
+DOCKER_IMAGE=gnaumann/biblioteca-api:latest docker compose up
 ```
 
 ### 3) Sem Docker (PostgreSQL local)
