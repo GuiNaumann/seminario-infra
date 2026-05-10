@@ -34,3 +34,6 @@ trabalho.txt
 
 # Claude Code
 .claude/
+
+# Pasta local com instruções de apresentação (não subir!)
+_apresentacao/
