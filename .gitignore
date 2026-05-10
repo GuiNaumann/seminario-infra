@@ -31,3 +31,6 @@ Thumbs.db
 # Arquivos auxiliares
 trabalho.txt
 *.pdf
+
+# Claude Code
+.claude/
