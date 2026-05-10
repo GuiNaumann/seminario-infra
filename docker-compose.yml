@@ -19,7 +19,7 @@ services:
   api:
     # Usa a imagem publicada no Docker Hub.
     # Sobrescreva via env var: DOCKER_IMAGE=usuario/biblioteca-api:latest docker compose up
-    image: ${DOCKER_IMAGE:-biblioteca-api:latest}
+    image: ${DOCKER_IMAGE:-guinaumann/biblioteca-api:latest}
     build: .
     ports:
       - "8080:8080"
