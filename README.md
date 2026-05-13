@@ -8,9 +8,11 @@ CRUD de livros em **Go + PostgreSQL** com pipeline completo de CI/CD em **GitHub
 
 ## 👥 Integrantes
 <!-- Substitua pelos nomes do grupo -->
-- Fulano de Tal
-- Beltrano de Tal
-- Sicrano de Tal
+- Guilherem Naumann
+- Gabriel Puff
+- Matheus Tallmann
+- Matheus Fritzen
+- Winicios Ulrich
 
 ---
 
@@ -185,15 +187,3 @@ Reduz o **tempo total do pipeline**. Build e testes não dependem um do outro �
 ### Tarefa 9 — Diferença entre tag `latest` e tag por SHA?
 - **`latest`**: ponteiro mutável, sempre aponta para a última versão publicada. Usar em ambientes de desenvolvimento/teste, ou quando quer "sempre o mais recente". Perigoso em produção porque a imagem muda sob seus pés.
 - **`${{ github.sha }}`**: imutável, identifica unicamente o commit. Use em produção, em rollbacks, em auditoria — você sabe exatamente qual código está rodando.
-
----
-
-## 🎬 Roteiro de apresentação (10–15 min)
-1. **Projeto** (1 min) — CRUD de livros em Go + PostgreSQL
-2. **Walkthrough do código** (3 min) — `main.go` (setup) → `handlers` → `repository` → `models`
-3. **Demonstração ao vivo** (5 min):
-   - `docker compose up` → mostrar API rodando + curl nos endpoints
-   - Push em `develop` → mostrar pipeline rodando no GitHub
-   - Mostrar imagem publicada no Docker Hub
-4. **Explicar cada job/step do `ci.yml`** (3 min)
-5. **Aprendizados e dificuldades** (2 min)
