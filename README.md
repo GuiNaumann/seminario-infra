@@ -1,3 +1,5 @@
+EDIÇÂO NO README.MD
+
 # 📚 Biblioteca API
 
 CRUD de livros em **Go + PostgreSQL** com pipeline completo de CI/CD em **GitHub Actions** e publicação no **Docker Hub**.
