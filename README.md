@@ -2,7 +2,7 @@
 
 CRUD de livros em **Go + PostgreSQL** com pipeline completo de CI/CD em **GitHub Actions** e publicação no **Docker Hub**.
 
-> Trabalho da disciplina **Infraestrutura de TIC** — Prof. Gabriel Castellani de Oliveira (FURB).
+> Trabalho da disciplina **Infraestrutura de TIC** — Prof. Gabriel Castellani de Oliveira (FURB)
 
 ---
 
