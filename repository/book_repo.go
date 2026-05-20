@@ -1,13 +1,6 @@
-package repository
 
-import (
-	"database/sql"
 
-	"biblioteca-api/models"
-)
-
-type BookRepository struct {
-	db *sql.DB
+type BookRepository struct	db *sql.DB
 }
 
 func NewBookRepository(db *sql.DB) *BookRepository {
